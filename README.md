@@ -1,6 +1,6 @@
 # Project-6
 
-  App Technology:
+App Technology:
     Java
 
 App Overview:
