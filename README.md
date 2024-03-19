@@ -1,7 +1,7 @@
 # Project-6
 
 App Technology:
-    Javascript
+    Javascript/Python
 
 App Overview:
   The healthcare app aims to enhance the quality of life by providing convenient access to healthcare services, empowering users to track and manage their health, and offering valuable wellness resources.
