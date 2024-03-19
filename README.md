@@ -12,7 +12,7 @@ Target Audience:
 
 Health Tracking:
   Description:
-    Enable users to monitor and track their health metrics, such as calories consumed, water consumption, fitness activities.
+    Enable users to monitor and track their health metrics, such as calories consumed, water consumption, sleep and fitness activities.
 
 Wellness Resources:
   Description:
