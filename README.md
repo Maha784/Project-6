@@ -1,13 +1,12 @@
 # Project-6
 
-Figma:
-https://www.figma.com/file/2P4BGbKmYZUhMJLef0gCVK/Untitled?type=design&node-id=0%3A1&mode=design&t=VoCPSGxn5Apo2kFB-1
+Health Tracker App
 
 App Technology:
     Python
 
 App Overview:
-  The healthcare app aims to enhance the quality of life by providing convenient access to healthcare services, empowering users to track and manage their health, and offering valuable wellness resources.
+  The Health Tracker App is a mobile application designed to help individuals monitor and manage their health and wellness. It enables users to track daily health metrics such as calorie intake, water consumption, physical activities, and sleep patterns. This project is aligned with promoting a healthier lifestyle and preventive healthcare.
 
 Target Audience:
   Residents of Qatar, including both citizens and expatriates.
@@ -39,3 +38,14 @@ Testing and Quality Assurance:
   Requirements:
     Rigorous testing for functionality, security, and usability.
     Beta testing with a diverse group of users.
+
+--------------------------------------------------------------------
+
+Prototype:
+https://www.figma.com/file/2P4BGbKmYZUhMJLef0gCVK/Untitled?type=design&node-id=0%3A1&mode=design&t=VoCPSGxn5Apo2kFB-1
+
+Technology Stack
+- **Frontend**: TBA
+- **Backend**: Flask for creating a RESTful API to serve the mobile app.
+
+- For starters, we have implemented basic features for the application and created unittest to verify that everything is working accordingly, as we move to the next stage, we will add more feature and work on the frontend of the application.
