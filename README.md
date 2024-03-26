@@ -1,5 +1,8 @@
 # Project-6
 
+Figma:
+https://www.figma.com/file/2P4BGbKmYZUhMJLef0gCVK/Untitled?type=design&node-id=0%3A1&mode=design&t=VoCPSGxn5Apo2kFB-1
+
 App Technology:
     Python
 
