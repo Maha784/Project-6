@@ -1,6 +1,8 @@
-# Project-6
+# Project - 6
 
 Health Tracker App
+
+--------------------------------------------------------------------
 
 App Technology:
     Python
