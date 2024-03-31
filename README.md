@@ -64,13 +64,13 @@ Prerequisites
 
 Installation
 1. Clone the backend repository to your local machine:
-git clone https://github.com/<your-github-username>/health-tracker-backend.git
-cd health-tracker-backend
+git clone https://github.com/Maha784/Project-6.git
+cd Project-6
 
 2. Set up a Python virtual environment and activate it:
 
 python -m venv venv
-.\venv\Scripts\activate # Windows
+.\venv\Scripts\activate
 
 3. Install the required Python packages from the requirements.txt file:
 
@@ -78,34 +78,48 @@ pip install -r requirements.txt
 
 4. Run the Flask application:
 
+(Using Python)
 python app.py
+
+(Using Flask Command)
+This method requires setting the FLASK_APP environment.
+
+set FLASK_APP=app.py 
+flask run
 
 5. Unit Tests
 
 To ensure the application's functionalities work as expected, we have included unit tests. Execute the following command to run these tests:
 
-python -m unittest discover -v
+python -m unittest test_health_tracker.py
 
 --------------------------------------------------------------------
 
 Project Structure
 
-The project is organized as follows:
+The repository contains the following structure for the backend application:
 
-    app.py: The main Flask application file.
-    /backend: Directory containing the core functionality.
-        health_track.py: Contains the HealthTracker class for managing health metrics.
-        user_feedback.py: Contains the UserFeedback class for handling user feedback.
-        wellness_resource.py: Contains the WellnessResources class for managing wellness articles.
-        appointment.py: Contains the PushNotification class for sending reminder notifications.
-    /tests: Directory containing the test cases for the application.
-        test_health_tracker.py: Unit tests for the HealthTracker class.
+- app.py: The Flask application entry point, defining routes for the API endpoints.
+- appointment.py: Module for handling appointment notifications.
+- health_track.py: Module for tracking health metrics.
+- user_feedback.py: Module for collecting user feedback.
+- wellness_resource.py: Module for managing wellness resources.
+- test_health_tracker.py: Unit tests for the HealthTracker functionality.
 
 API Endpoints
 
-The application provides the following API endpoints:
+The backend facilitates various health-related actions through these endpoints:
 
-    /track_health_metrics: For tracking health-related metrics.
-    /add_wellness_article: For adding wellness articles.
-    /submit_feedback: For submitting user feedback.
-    /send_reminder_notification: For sending reminder notifications for appointments.
+/track_health_metrics (POST)
+Tracks health metrics like calories, water intake, sleep, and exercise.
+
+/add_wellness_article (POST)
+Enables adding new wellness articles.
+
+/submit_feedback (POST)
+Submits user feedback for the app.
+
+/send_reminder_notification (POST)
+Intended to send a reminder notification to users for their upcoming appointments.
+
+
