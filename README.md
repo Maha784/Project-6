@@ -68,22 +68,16 @@ Installation
     git clone https://github.com/Maha784/Project-6.git
     cd Project-6
 ```
-2. Set up a Python virtual environment and activate it:
-```
-    python -m venv venv
-    .\venv\Scripts\activate
-```
-3. Install the required Python packages from the requirements.txt file:
+2. Install the required Python packages from the requirements.txt file:
 ```
     pip install -r requirements.txt
 ```
-4. Run the Flask application:
+3. Run the Flask application:
 
 ```
     python app.py
 ```
-
-5. Unit Tests
+4. Unit Tests
 
     To ensure the application's functionalities work as expected, we have included unit tests. Execute the following command to run these tests:
 ```
