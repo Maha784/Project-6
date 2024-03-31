@@ -64,35 +64,31 @@ Prerequisites
 
 Installation
 1. Clone the backend repository to your local machine:
-git clone https://github.com/Maha784/Project-6.git
-cd Project-6
-
+```
+    git clone https://github.com/Maha784/Project-6.git
+    cd Project-6
+```
 2. Set up a Python virtual environment and activate it:
-
-python -m venv venv
-.\venv\Scripts\activate
-
+```
+    python -m venv venv
+    .\venv\Scripts\activate
+```
 3. Install the required Python packages from the requirements.txt file:
-
-pip install -r requirements.txt
-
+```
+    pip install -r requirements.txt
+```
 4. Run the Flask application:
 
-(Using Python)
-python app.py
-
-(Using Flask Command)
-This method requires setting the FLASK_APP environment.
-
-set FLASK_APP=app.py 
-flask run
+```
+    python app.py
+```
 
 5. Unit Tests
 
-To ensure the application's functionalities work as expected, we have included unit tests. Execute the following command to run these tests:
-
-python -m unittest test_health_tracker.py
-
+    To ensure the application's functionalities work as expected, we have included unit tests. Execute the following command to run these tests:
+```
+    python -m unittest test_health_tracker.py
+```
 --------------------------------------------------------------------
 
 Project Structure
@@ -110,16 +106,16 @@ API Endpoints
 
 The backend facilitates various health-related actions through these endpoints:
 
-/track_health_metrics (POST)
-Tracks health metrics like calories, water intake, sleep, and exercise.
+- /track_health_metrics (POST)
+  Tracks health metrics like calories, water intake, sleep, and exercise.
 
-/add_wellness_article (POST)
-Enables adding new wellness articles.
+- /add_wellness_article (POST)
+  Enables adding new wellness articles.
 
-/submit_feedback (POST)
-Submits user feedback for the app.
+- /submit_feedback (POST)
+  Submits user feedback for the app.
 
-/send_reminder_notification (POST)
-Intended to send a reminder notification to users for their upcoming appointments.
+- /send_reminder_notification (POST)
+  Intended to send a reminder notification to users for their upcoming appointments.
 
 
