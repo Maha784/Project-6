@@ -1,4 +1,6 @@
 # backend/health_tracker.py
+import datetime
+
 class HealthTracker:
     def __init__(self):
         self.calories_consumed = 0
@@ -35,3 +37,23 @@ class HealthTracker:
             return "Fitness activity must be a string"
         
         self.fitness_activities.append(activity)
+
+    def track_steps(self, date, steps):
+        if not isinstance(date, datetime.date):
+            return "Date must be a valid datetime.date object"
+        
+        if not isinstance(steps, int):
+            return "Steps must be an integer"
+        
+        self.steps_data[date] = steps
+
+    def get_total_steps_per_week(self, week_start_date):
+        if not isinstance(week_start_date, datetime.date):
+            return "Week start date must be a valid datetime.date object"
+        
+        week_end_date = week_start_date + datetime.timedelta(days=6)  # Calculate week end date
+        total_steps = 0
+        for date, steps in self.steps_data.items():
+            if week_start_date <= date <= week_end_date:
+                total_steps += steps
+        return total_steps
