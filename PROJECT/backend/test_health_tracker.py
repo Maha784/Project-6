@@ -17,7 +17,26 @@ class TestHealthTracker(unittest.TestCase):
         self.assertEqual(health_tracker.water_intake, 2)
 
     # Add similar tests for other methods in HealthTracker class
+    def test_track_steps(self):
+        health_tracker = HealthTracker()
+        date = datetime.date(2024, 4, 1)
+        health_tracker.track_steps(date, 5000)
+        self.assertEqual(health_tracker.steps_data[date], 5000)
 
+    def test_get_total_steps_per_week(self):
+        health_tracker = HealthTracker()
+        # Assuming steps are tracked for the week starting from April 1, 2024
+        week_start_date = datetime.date(2024, 4, 1)
+        for i in range(7):
+            date = week_start_date + datetime.timedelta(days=i)
+            health_tracker.track_steps(date, 1000 * (i + 1))  # Assuming steps increase each day
+        
+        total_steps = health_tracker.get_total_steps_per_week(week_start_date)
+        self.assertEqual(total_steps, 28000)  # Total steps for the week should be 28,000
+
+if __name__ == '__main__':
+    unittest.main()
+    
 class TestWellnessResources(unittest.TestCase):
     def test_add_article(self):
         wellness_resources = WellnessResources()
