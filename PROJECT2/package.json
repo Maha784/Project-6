@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "handlebars-helper-json": "^1.0.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.0"
+  }
+}
