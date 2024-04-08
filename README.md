@@ -75,7 +75,9 @@ The tests are located in __test__ directory. These tests cover critical function
 Tests are organized into separate files corresponding to the application's main components:
 
     business.test.js for testing business logic and operations.
+
     persistence.test.js for testing database interactions.
+
     web.test.js for testing HTTP request handling and response generation.
     
 **Development Dependencies for Testing**
