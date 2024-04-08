@@ -68,12 +68,33 @@ The Health Tracker Web App is a comprehensive solution designed to assist users 
 ```
     nodemon web.js
 ```
-4. Unit Test
+**Unit Tests**
 
-    To ensure the application's functionalities work as expected, we have included a unit test. Tests can be run using the following command:
-```
+These tests cover critical functionalities, including user authentication processes, health metrics tracking, and feedback submission.
+Tests are organized into separate files corresponding to the application's main components:
+
+    business.test.js for testing business logic and operations.
+    persistence.test.js for testing database interactions.
+    web.test.js for testing HTTP request handling and response generation.
     
+**Development Dependencies for Testing**
+
+To run unit tests, the application utilizes Jest as the testing framework and Supertest for HTTP assertions. These are included as development dependencies in the package.json file and should be installed during the initial npm install step. If you encounter any issues running tests, ensure that you have the latest versions of these libraries by running:
+
 ```
+    npm install --save-dev jest supertest
+```
+
+**Running Unit Tests**
+
+With all dependencies installed, you can execute the unit tests to verify the application's functionalities. To run the tests, use the following command:
+
+```
+    npm test
+```
+
+**Note: The tests use mocking to simulate interactions with the database and external services, ensuring that the tests can run independently of the actual database state or network conditions.**
+
 
 **Usage**
 
