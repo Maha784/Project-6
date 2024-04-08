@@ -1,25 +1,19 @@
 # Project - 6
 
-Health Tracker App
+**Health Tracker Application**
 
 --------------------------------------------------------------------
 
-App Technology:
-    Python
-
-App Overview:
-  The Health Tracker App is a mobile application designed to help individuals monitor and manage their health and wellness. It enables users to track daily health metrics such as calorie intake, water consumption, physical activities, and sleep patterns. This project is aligned with promoting a healthier lifestyle and preventive healthcare.
+**Application Goals and Deliverables:**
 
 Target Audience:
   Residents of Qatar, including both citizens and expatriates.
   Focus on inclusivity, making the app accessible to users of different age groups and backgrounds.
 
 Health Tracking:
-  Description:
     Enable users to monitor and track their health metrics, such as calories consumed, water consumption, sleep and fitness activities.
 
 Wellness Resources:
-  Description:
     Provide educational content, articles, and tips for maintaining a healthy lifestyle.
 
   Requirements:
@@ -27,89 +21,159 @@ Wellness Resources:
     User feedback and engagement features.
 
 User Engagement and Feedback:
-  Features:
-    Push notifications for appointment reminders.
     User feedback forms for continuous improvement.
 
 Accessibility and Multilingual Support:
-  Requirements:
     Ensure the app is accessible to users with different abilities.
-    Provide language options to accommodate the diverse population.
+    Provide language optio to accommodate the diverse population.
 
 Testing and Quality Assurance:
-  Requirements:
     Rigorous testing for functionality, security, and usability.
-    Beta testing with a diverse group of users.
 
 --------------------------------------------------------------------
 
-Prototype:
+**Prototype:**
 https://www.figma.com/file/2P4BGbKmYZUhMJLef0gCVK/Untitled?type=design&node-id=0%3A1&mode=design&t=VoCPSGxn5Apo2kFB-1
 
-Health Tracker App Backend
+**Health Tracker Application**
 
-Description
-The Health Tracker App is a comprehensive application designed to help users monitor and manage various health-related metrics. The app allows tracking of calorie intake, water consumption, sleep duration, and physical activity to promote a healthier lifestyle aligned with the Quality of Life goal of Qatar's National Development Strategy.
+**Description**
+The Health Tracker Web App is a comprehensive solution designed to assist users in monitoring and managing their health metrics. The application allows users to track their calorie intake, water consumption, sleep duration, and fitness activities, offering a holistic view of their health and wellness journey.
 
-Technology Stack
-- **Backend**: Flask (Python)
-- **Frontend**: TBA
+**Technology Stack*
 
-Backend Setup
+- Backend: Node.js
+- Frontend: Handlebars.js for templating
+- Database: MongoDB
+- Styling: CSS with separate stylesheets for different views
 
-Prerequisites
-- Python 3.8 or higher
-- pip (Python package installer)
-- Virtual environment
+**Prerequisites**
+- Node.js 
+- npm 
+- MongoDB 
 
-Installation
+**Installation**
+
 1. Clone the backend repository to your local machine:
 ```
     git clone https://github.com/Maha784/Project-6.git
     cd Project-6
 ```
-2. Install the required Python packages from the requirements.txt file:
+2. Install the required Node.js packages
 ```
-    pip install -r requirements.txt
+    npm install
 ```
-3. Run the Flask application:
+3. Start the server/application:
 
 ```
-    python app.py
+    nodemon web.js
 ```
-4. Unit Tests
+4. Unit Test
 
-    To ensure the application's functionalities work as expected, we have included unit tests. Execute the following command to run these tests:
+    To ensure the application's functionalities work as expected, we have included a unit test. Tests can be run using the following command:
 ```
-    python -m unittest test_health_tracker.py
+    
 ```
+
+**Usage**
+
+After starting the server, navigate to http://127.0.0.1:3000 in your web browser to view the Health Tracker application.
+
+
+**Features**
+
+    User Authentication (Login/Register/Logout)
+    
+    Tracking and viewing personal health metrics
+    
+    Wellness resources recommendations
+    
+    Submitting and viewing user feedback
+    
+
 --------------------------------------------------------------------
 
-Project Structure
+**Project Structure**
 
-The repository contains the following structure for the backend application:
+    HEALTH/
+    |-- images/
+    |   |-- banner.jpg
+    |   `-- log.png
+    |-- node_modules/
+    |-- styles/
+    |   |-- login.css
+    |   |-- main.css
+    |   `-- register.css
+    |-- templates/
+    |   |-- layouts/
+    |   |   `-- main.handlebars
+    |   |-- all-feedback.handlebars
+    |   |-- dashboard.handlebars
+    |   |-- feedback.handlebars
+    |   |-- home.handlebars
+    |   |-- login.handlebars
+    |   |-- my-health-metrics-form.handlebars
+    |   `-- register.handlebars
+    |-- .gitignore
+    |-- business.js
+    |-- package-lock.json
+    |-- package.json
+    |-- persistence.js
+    `-- web.js
 
-- app.py: The Flask application entry point, defining routes for the API endpoints.
-- appointment.py: Module for handling appointment notifications.
-- health_track.py: Module for tracking health metrics.
-- user_feedback.py: Module for collecting user feedback.
-- wellness_resource.py: Module for managing wellness resources.
-- test_health_tracker.py: Unit tests for the HealthTracker functionality.
+The Health Tracker Web App is organized into several directories and files, each serving a specific purpose in the functionality of the application:
 
-API Endpoints
+    images/: Contains graphical content used across the application for a more engaging user interface.
 
-The backend facilitates various health-related actions through these endpoints:
+    node_modules/: Stores the packages and modules required by the application, as installed via npm.
 
-- /track_health_metrics (POST)
-  Tracks health metrics like calories, water intake, sleep, and exercise.
+    styles/: Holds the CSS files that style the application, ensuring a consistent and responsive design.
 
-- /add_wellness_article (POST)
-  Enables adding new wellness articles.
+    templates/: Includes Handlebars templates that define the HTML structure of the pages served to the client.
 
-- /submit_feedback (POST)
-  Submits user feedback for the app.
+    business.js: Implements the business logic of the application, encapsulating data processing and decision-making code.
 
-- /send_reminder_notification (POST)
-  Intended to send a reminder notification to users for their upcoming appointments.
+    persistence.js: Manages data persistence, including database operations leveraging MongoDB.
+
+    web.js: Configures the Express server, defining routes and middleware necessary for handling HTTP requests.
+
+
+
+**Development Journey**
+
+*Initial Concept and Prototyping*
+
+The project began with a vision to create an intuitive mobile application designed to track and
+enhance individual health metrics but due to limitation we proceeded in making a web application for the time being. We are aiming to offer a tool that could help users monitor and improve their diet, sleep, and exercise habits.
+  
+*Technology Stack Evaluation*
+
+Initially, we laid the foundation using Python with the Flask framework for its simplicity and rapid development capabilities. Prototypes were developed to validate the application's core functionality.
+
+*Reassessing the Technology Stack*
+
+As our requirements evolved, we recognized the need for a more scalable and event-driven environment to handle real-time data processing and user interactions. A decision was made to migrate from Python to a Node.js backend.
+
+*Transitioning to Node.js*
+
+The transition to Node.js involved restructuring our codebase, and adapting our existing Python logic to JavaScript. 
+
+*Building the Core with Node.js*
+
+We re-implemented the core features in Node.js, utilizing Express.js to set up the server and routes, and integrating MongoDB for data persistence. This provided us with a more robust and flexible architecture.\
+
+*Feature Development and Enhancement*
+
+With Node.js, we were able to build a real-time dashboard, implement efficient health metrics tracking, and introduce a dynamic feedback system. We also took advantage of the extensive npm ecosystem to integrate additional functionalities.
+
+*Refinement and User Experience*
+
+Throughout the development process, we placed a strong emphasis on user experience. Migrating to Node.js allowed us to refine the application's responsiveness and interactivity, delivering a seamless experience to our users.
+
+*Testing, Deployment, and Iteration*
+
+Extensive testing ensured that our application met all functional requirements. After deploying our Node.js application, we continued to iterate, constantly improving the features.
+
+
 
 
