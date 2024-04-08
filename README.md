@@ -62,6 +62,7 @@ The Health Tracker Web App is a comprehensive solution designed to assist users 
 2. Install the required Node.js packages
 ```
     npm install
+    npm install -g nodemon
 ```
 3. Start the server/application:
 
@@ -70,7 +71,7 @@ The Health Tracker Web App is a comprehensive solution designed to assist users 
 ```
 **Unit Tests**
 
-These tests cover critical functionalities, including user authentication processes, health metrics tracking, and feedback submission.
+The tests are located in __test__ directory. These tests cover critical functionalities, including user authentication processes, health metrics tracking, and feedback submission.
 Tests are organized into separate files corresponding to the application's main components:
 
     business.test.js for testing business logic and operations.
