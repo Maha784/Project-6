@@ -165,6 +165,7 @@ The Health Tracker Web App is organized into several directories and files, each
 
 **Development Journey**
 
+
 *Initial Concept and Prototyping*
 
 The project began with a vision to create an intuitive mobile application designed to track and
