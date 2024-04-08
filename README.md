@@ -166,36 +166,36 @@ The Health Tracker Web App is organized into several directories and files, each
 **Development Journey**
 
 
-*Initial Concept and Prototyping*
+***Initial Concept and Prototyping***
 
 The project began with a vision to create an intuitive mobile application designed to track and
 enhance individual health metrics but due to limitation we proceeded in making a web application for the time being. We are aiming to offer a tool that could help users monitor and improve their diet, sleep, and exercise habits.
   
-*Technology Stack Evaluation*
+***Technology Stack Evaluation***
 
 Initially, we laid the foundation using Python with the Flask framework for its simplicity and rapid development capabilities. Prototypes were developed to validate the application's core functionality.
 
-*Reassessing the Technology Stack*
+***Reassessing the Technology Stack***
 
 As our requirements evolved, we recognized the need for a more scalable and event-driven environment to handle real-time data processing and user interactions. A decision was made to migrate from Python to a Node.js backend.
 
-*Transitioning to Node.js*
+***Transitioning to Node.js***
 
 The transition to Node.js involved restructuring our codebase, and adapting our existing Python logic to JavaScript. 
 
-*Building the Core with Node.js*
+***Building the Core with Node.js***
 
 We re-implemented the core features in Node.js, utilizing Express.js to set up the server and routes, and integrating MongoDB for data persistence. This provided us with a more robust and flexible architecture.\
 
-*Feature Development and Enhancement*
+***Feature Development and Enhancement***
 
 With Node.js, we were able to build a real-time dashboard, implement efficient health metrics tracking, and introduce a dynamic feedback system. We also took advantage of the extensive npm ecosystem to integrate additional functionalities.
 
-*Refinement and User Experience*
+***Refinement and User Experience***
 
 Throughout the development process, we placed a strong emphasis on user experience. Migrating to Node.js allowed us to refine the application's responsiveness and interactivity, delivering a seamless experience to our users.
 
-*Testing, Deployment, and Iteration*
+***Testing, Deployment, and Iteration***
 
 Extensive testing ensured that our application met all functional requirements. After deploying our Node.js application, we continued to iterate, constantly improving the features.
 
