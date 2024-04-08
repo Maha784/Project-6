@@ -40,7 +40,7 @@ https://www.figma.com/file/2P4BGbKmYZUhMJLef0gCVK/Untitled?type=design&node-id=0
 **Description**
 The Health Tracker Web App is a comprehensive solution designed to assist users in monitoring and managing their health metrics. The application allows users to track their calorie intake, water consumption, sleep duration, and fitness activities, offering a holistic view of their health and wellness journey.
 
-**Technology Stack*
+**Technology Stack**
 
 - Backend: Node.js
 - Frontend: Handlebars.js for templating
