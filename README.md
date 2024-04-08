@@ -185,7 +185,7 @@ The transition to Node.js involved restructuring our codebase, and adapting our 
 
 ***Building the Core with Node.js***
 
-We re-implemented the core features in Node.js, utilizing Express.js to set up the server and routes, and integrating MongoDB for data persistence. This provided us with a more robust and flexible architecture.\
+We re-implemented the core features in Node.js, utilizing Express.js to set up the server and routes, and integrating MongoDB for data persistence. This provided us with a more robust and flexible architecture.
 
 ***Feature Development and Enhancement***
 
