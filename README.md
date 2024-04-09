@@ -1,58 +1,56 @@
-# Project - 6
-
-**Health Tracker Application**
+# Project - Group 6
 
 --------------------------------------------------------------------
 
-**Application Goals and Deliverables:**
+**Health Tracker Application Goals and Deliverables:**
 
-Target Audience:
+***Target Audience:***
   Residents of Qatar, including both citizens and expatriates.
   Focus on inclusivity, making the app accessible to users of different age groups and backgrounds.
 
-Health Tracking:
+***Health Tracking:***
     Enable users to monitor and track their health metrics, such as calories consumed, water consumption, sleep and fitness activities.
 
-Wellness Resources:
+***Wellness Resources:***
     Provide educational content, articles, and tips for maintaining a healthy lifestyle.
-
-  Requirements:
     Categorization for easy navigation.
     User feedback and engagement features.
 
-User Engagement and Feedback:
+***User Engagement and Feedback:***
     User feedback forms for continuous improvement.
 
-Accessibility and Multilingual Support:
+***Accessibility and Multilingual Support:***
     Ensure the app is accessible to users with different abilities.
     Provide language optio to accommodate the diverse population.
 
-Testing and Quality Assurance:
+***Testing and Quality Assurance:***
     Rigorous testing for functionality, security, and usability.
 
 --------------------------------------------------------------------
 
-**Prototype:**
+**Prototype View (Mobile Application):**
 https://www.figma.com/file/2P4BGbKmYZUhMJLef0gCVK/Untitled?type=design&node-id=0%3A1&mode=design&t=VoCPSGxn5Apo2kFB-1
+
+--------------------------------------------------------------------
 
 **Health Tracker Application**
 
-**Description**
+***Description***
 The Health Tracker Web App is a comprehensive solution designed to assist users in monitoring and managing their health metrics. The application allows users to track their calorie intake, water consumption, sleep duration, and fitness activities, offering a holistic view of their health and wellness journey.
 
-**Technology Stack**
+***Technology Stack***
 
 - Backend: Node.js
 - Frontend: Handlebars.js for templating
 - Database: MongoDB
 - Styling: CSS with separate stylesheets for different views
 
-**Prerequisites**
+***Prerequisites***
 - Node.js 
 - npm 
 - MongoDB 
 
-**Installation**
+***Installation***
 
 1. Clone the backend repository to your local machine:
 ```
@@ -69,6 +67,8 @@ The Health Tracker Web App is a comprehensive solution designed to assist users 
 ```
     nodemon web.js
 ```
+--------------------------------------------------------------------
+
 **Unit Tests**
 
 The tests are located in __test__ directory. These tests cover critical functionalities, including user authentication processes, health metrics tracking, and feedback submission.
@@ -80,7 +80,7 @@ Tests are organized into separate files corresponding to the application's main 
 
     web.test.js for testing HTTP request handling and response generation.
     
-**Development Dependencies for Testing**
+***Development Dependencies for Testing***
 
 To run unit tests, the application utilizes Jest as the testing framework and Supertest for HTTP assertions. These are included as development dependencies in the package.json file and should be installed during the initial npm install step. If you encounter any issues running tests, ensure that you have the latest versions of these libraries by running:
 
@@ -88,7 +88,7 @@ To run unit tests, the application utilizes Jest as the testing framework and Su
     npm install --save-dev jest supertest
 ```
 
-**Running Unit Tests**
+***Running Unit Tests***
 
 With all dependencies installed, you can execute the unit tests to verify the application's functionalities. To run the tests, use the following command:
 
@@ -96,13 +96,14 @@ With all dependencies installed, you can execute the unit tests to verify the ap
     npm test
 ```
 
-**Note: The tests use mocking to simulate interactions with the database and external services, ensuring that the tests can run independently of the actual database state or network conditions.**
+***Note:*** The tests use mocking to simulate interactions with the database and external services, ensuring that the tests can run independently of the actual database state or network conditions.
 
 
-**Usage**
+***Usage***
 
 After starting the server, navigate to http://127.0.0.1:3000 in your web browser to view the Health Tracker application.
 
+--------------------------------------------------------------------
 
 **Features**
 
@@ -160,7 +161,29 @@ The Health Tracker Web App is organized into several directories and files, each
     persistence.js: Manages data persistence, including database operations leveraging MongoDB.
 
     web.js: Configures the Express server, defining routes and middleware necessary for handling HTTP requests.
+		
+--------------------------------------------------------------------
 
+**Continuous Integration (CI)**
+
+
+***Automated Testing and Build with GitHub Actions***
+
+We have implemented a Continuous Integration (CI) pipeline using GitHub Actions, which automatically runs our suite of unit tests and builds the project whenever changes are pushed to the main branch or a pull request is created.
+
+***CI Workflow***
+
+The CI workflow is defined in the .github/workflows/HealthTracker-CI.yml file within the project repository. It is triggered on push and pull request events to the main branch.
+
+***The workflow includes the following jobs:***
+
+    build-and-test: Sets up the project environment using Node.js and runs all unit tests. It ensures that all tests pass before any new code is merged into the main branch.
+
+***Maintaining CI***
+
+The workflow is maintained as part of the project repository, and any updates or changes to the CI process can be managed by modifying the .github/workflows/HealthTracker-CI.yml file. This includes adjusting node versions, adding additional tests, or changing the workflow triggers.
+
+--------------------------------------------------------------------
 
 
 **Development Journey**
