@@ -1,0 +1,42 @@
+<!-- my-health-metrics.handlebars -->
+<head>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Metrics:</h1>
+    <br>
+
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Calories</th>
+            <th>Water</th>
+            <th>Sleep</th>
+        </tr>
+        
+        {{#if healthMetrics}}
+            <tr>
+                <td>{{healthMetrics.username}}</td>
+                <td>{{healthMetrics.metrics.calories}}</td>
+                <td>{{healthMetrics.metrics.water}}</td>
+                <td>{{healthMetrics.metrics.sleep}}</td>
+            </tr>
+        {{else}}
+            <tr>
+                <td colspan="4">No health metrics data available.</td>
+            </tr>
+        {{/if}}
+    </table>
+
+    <br>
+    <div>
+        <a href="/logout">Logout</a>
+    </div>
+</body>

@@ -1,0 +1,36 @@
+<!-- Dashboard Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{Username}}!</h1>
+    <h2>Welcome to the Health Tracker website!</h2>
+    <h3>Your personalized health dashboard designed to help you track and improve your well-being.</h3>
+    <h3>Whether you're focused on fitness, nutrition, or overall wellness
+        we're here to support your journey to a healthier you</h3>
+
+    <ul>
+        <li>Calories Consumed: {{healthMetrics.calories}}</li>
+        <li>Water Consumption: {{healthMetrics.water}}</li>
+        <li>Sleep: {{healthMetrics.sleep}}</li>            
+        <li>Fitness Activities: {{healthMetrics.fitness}}</li>
+    </ul>
+
+    <h2>Wellness Resources:</h2>
+    <div class="wellness-resource">
+        <h3>{{wellnessResource.title}}</h3>
+        <p>{{wellnessResource.content}}</p>
+    </div>
+
+
+    <!-- Button to navigate to the form page -->
+    <button class="btn"><a href="/my-health-metrics-form" style="color: black; text-decoration: none;">Fill the Form</a></button>
+    <br>
+    <br>
+    <!-- Button for logout -->
+    <button class="btn btn-logout"><a href="/logout" style="color: black; text-decoration: none;">Logout</a></button></body>
+</html>

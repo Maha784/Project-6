@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Feedback</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background color */
+            color: #333333; /* Dark gray text color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* White background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff; /* Blue heading color */
+            margin-bottom: 20px;
+        }
+        .feedback {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa; /* Light gray background color */
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .feedback p {
+            margin: 0;
+            padding: 5px 0;
+            color: #333333; /* Dark gray text color */
+        }
+        .feedback p.username {
+            font-weight: bold;
+            color: #007bff; /* Blue color for username */
+        }
+        .feedback p.feedback-text {
+            color: #555555; /* Medium gray color for feedback text */
+        }
+        .no-feedback {
+            text-align: center;
+            color: #555555; /* Medium gray color for no-feedback message */
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>All Feedback</h1>
+        {{#each feedbackList}}
+            <div class="feedback">
+                <p class="username"><strong>Username:</strong> {{this.name}}</p>
+                <p class="feedback-text"><strong>Feedback:</strong> {{this.feedback}}</p>
+            </div>
+        {{/each}}
+        {{#unless feedbackList}}
+            <p class="no-feedback">No feedback available.</p>
+        {{/unless}}
+    </div>
+</body>
+</html>
+
+
+
