@@ -26,7 +26,7 @@ app.use('/images', express.static(__dirname + '/images'));
 
 // Home Page
 app.get('/', async (req, res) => {
-    res.render('home');
+    res.render('new');
 });
 
 // Login Page
